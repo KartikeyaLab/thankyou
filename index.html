@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartikeya | Code. Design. Create.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/542131e2b7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #10121b;
+      }
+    </style>
+  </head>
+  <body class="text-white">
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#">Kartikeya</a>
+        </div>
+
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn">
+            <i class="fas fa-times"></i>
+          </label>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#videos" class="nav-link">Videos</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="https://github.com/KartikeyaLab" target="_blank">Github</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@clever-ways" target="_blank"
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <a href="https://monkeytype.com/profile/Karitkeya" target="_blank"
+              >Monkeytype</a
+            >
+          </li>
+        </ul>
+
+        <label for="menu-btn" class="btn menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+      </div>
+    </nav>
+
+    <section
+      class="flex-grow flex flex-col justify-center items-center text-center px-6 header"
+    >
+      <h2 class="text-6xl md:text-8xl font-bold mb-2 leading-tight">
+        Thank You!
+      </h2>
+
+      <p class="text-zinc-400 text-base md:text-lg mb-5">
+        Your message has been sent successfully. I’ll get back to you shortly.
+      </p>
+
+      <div
+        class="flex flex-wrap justify-center items-center gap-4 md:gap-6 p-4"
+      >
+        <a
+          href="https://kartikeyalab.github.io/kartikeya/"
+          class="group relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-white/5 border border-white/20 backdrop-blur-md shadow hover:shadow-lg transition-all duration-300 hover:scale-110 hover:border-white/30"
+          title="Home"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+          ></div>
+          <i
+            class="fa-solid fa-house text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
+          ></i>
+        </a>
+
+        <a
+          href="https://monkeytype.com/profile/Karitkeya"
+          target="_blank"
+          class="group relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-white/5 border border-white/20 backdrop-blur-md shadow hover:shadow-lg transition-all duration-300 hover:scale-110 hover:border-white/30"
+          title="Typing profile"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+          ></div>
+          <i
+            class="fa-solid fa-keyboard text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
+          ></i>
+        </a>
+
+        <a
+          href="https://github.com/KartikeyaLab"
+          target="_blank"
+          class="group relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-white/5 border border-white/20 backdrop-blur-md shadow hover:shadow-lg transition-all duration-300 hover:scale-110 hover:border-white/30"
+          title="GitHub"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+          ></div>
+          <i
+            class="fa-brands fa-github text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
+          ></i>
+        </a>
+
+        <a
+          href="https://www.youtube.com/@clever-ways"
+          target="_blank"
+          class="group relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-white/5 border border-white/20 backdrop-blur-md shadow hover:shadow-lg transition-all duration-300 hover:scale-110 hover:border-white/30"
+          title="YouTube"
+        >
+          <div
+            class="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+          ></div>
+          <i
+            class="fa-brands fa-youtube text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
+          ></i>
+        </a>
+      </div>
+
+      <div class="transparent_overlay"></div>
+    </section>
+
+    <footer
+      class="text-center py-6 text-zinc-600 text-sm border-t border-zinc-800"
+    >
+      © <span id="year"></span> Kartikeya. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
