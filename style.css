@@ -84,15 +84,22 @@ h4 {
   overflow: hidden;
   background-image: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.807),
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.627)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
-    url("Media/Background.png");
-  background-position: bottom;
+    url("./Media/Background.webp");
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
+
+  background-color: #000;
+  background-blend-mode: normal;
+
+  image-rendering: auto;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .glow-card::before {
@@ -228,15 +235,15 @@ nav .wrapper {
     left: -100%;
     background: #10121b;
     display: block;
-    padding: 40px 10px; /* Slightly reduced padding for more space */
-    line-height: 50px; /* Increase line-height for better spacing */
+    padding: 40px 10px;
+    line-height: 50px;
     overflow-y: auto;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
     transition: all 0.3s ease;
   }
 
   ::-webkit-scrollbar {
-    width: 8px; /* Slim scrollbar */
+    width: 8px;
   }
   ::-webkit-scrollbar-track {
     background: #18181800;
@@ -255,19 +262,16 @@ nav .wrapper {
     display: block;
   }
 
-  /* Increased gap between list items */
   .nav-links li {
     margin: 25px 40px;
-    /* Increased margin for more space */
   }
 
-  /* Reduced font size and better readability */
   .nav-links li a {
     padding: 0 15px;
     display: block;
     font-size: 1rem;
 
-    line-height: 2.75; /* More comfortable line height for better readability */
+    line-height: 2.75;
   }
 }
 
