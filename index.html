@@ -28,118 +28,82 @@
   </head>
   <body class="text-white">
     <div id="loading-circle" class="loading-circle">
-      <div class="spinner"></div>
+      <div class="elegant-spinner"></div>
     </div>
 
     <div class="container_universal_hidden">
-      <nav>
-        <div class="wrapper">
-          <div class="logo">
-            <a href="#">Kartikeya</a>
+      <div class="god_nav">
+        <nav>
+          <div class="wrapper">
+            <div class="options">
+              <div class="logo">
+                <a href="#">Kartikeya</a>
+              </div>
+              <div id="openMobileMenu" class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+            </ul>
           </div>
-
-          <input type="radio" name="slider" id="menu-btn" />
-          <input type="radio" name="slider" id="close-btn" />
-          <ul class="nav-links">
-            <label for="close-btn" class="btn close-btn">
-              <i class="fas fa-times"></i>
-            </label>
-            <li>
-              <a
-                href="https://kartikeyalab.github.io/kartikeya/#"
-                class="nav-link"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://kartikeyalab.github.io/kartikeya/##about"
-                class="nav-link"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://kartikeyalab.github.io/kartikeya/##videos"
-                class="nav-link"
-                >Videos</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://kartikeyalab.github.io/kartikeya/##projects"
-                class="nav-link"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://kartikeyalab.github.io/kartikeya/##contact"
-                class="nav-link"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/KartikeyaLab" target="_blank"
-                >Github</a
-              >
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@clever-ways" target="_blank"
-                >Youtube</a
-              >
-            </li>
-            <li>
-              <a href="https://monkeytype.com/profile/Karitkeya" target="_blank"
-                >Monkeytype</a
-              >
-            </li>
-          </ul>
-
-          <label for="menu-btn" class="btn menu-btn">
-            <i class="fas fa-bars"></i>
-          </label>
-        </div>
-      </nav>
-
+        </nav>
+      </div>
       <section
-        class="flex-grow flex flex-col justify-center items-center text-center px-6 header"
+        class="flex-grow flex flex-col justify-center items-center text-center px-6 header fade-element"
       >
-        <h2 class="text-6xl md:text-8xl font-bold mb-2 leading-tight">
+        <h2 class="text-6xl md:text-8xl font-bold mb-2 leading-none">
           Thank You!
         </h2>
 
-        <p class="text-zinc-400 text-base md:text-lg mb-5">
-          Your message has been sent successfully. I’ll get back to you shortly.
+        <p class="text-zinc-400 text-base md:text-lg fade-element">
+          our message has been sent successfully. I’ll get back to you shortly.
         </p>
-
         <div
-          class="flex flex-wrap justify-center items-center gap-4 md:gap-6 p-4"
+          class="flex flex-wrap justify-center items-center gap-4 md:gap-6 pr-6 pl-6 pt-5 pb-5 mt-4 rounded-[3.5rem] bg-white/10 backdrop-blur-md border border-white/20 shadow-lg max-w-3xl mx-auto"
         >
           <a
-            href="https://kartikeyalab.github.io/kartikeya/"
+            href="https://kartikeyalab.github.io/kartikeya"
+            target="_blank"
             class="group relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-white/5 border border-white/20 backdrop-blur-md shadow hover:shadow-lg transition-all duration-300 hover:scale-110 hover:border-white/30"
-            title="Home"
+            title="Website Builder"
           >
             <div
               class="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
             ></div>
             <i
-              class="fa-solid fa-house text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
+              class="fa-solid fa-home text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
+              aria-hidden="true"
             ></i>
           </a>
 
           <a
-            href="https://monkeytype.com/profile/Karitkeya"
-            target="_blank"
+            href="mailto:kartikeya30062009@gmail.com"
             class="group relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-white/5 border border-white/20 backdrop-blur-md shadow hover:shadow-lg transition-all duration-300 hover:scale-110 hover:border-white/30"
-            title="Typing profile"
+            title="Email me"
           >
             <div
               class="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
             ></div>
             <i
-              class="fa-solid fa-keyboard text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
+              class="fa-solid fa-envelope text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+          <a
+            href="https://kartikeya.onrender.com/"
+            target="_blank"
+            class="group relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-white/5 border border-white/20 backdrop-blur-md shadow hover:shadow-lg transition-all duration-300 hover:scale-110 hover:border-white/30"
+            title="Publish Website"
+          >
+            <div
+              class="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+            ></div>
+            <i
+              class="fa-solid fa-cloud text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
+              aria-hidden="true"
             ></i>
           </a>
 
@@ -154,36 +118,14 @@
             ></div>
             <i
               class="fa-brands fa-github text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
-            ></i>
-          </a>
-
-          <a
-            href="https://www.youtube.com/@clever-ways"
-            target="_blank"
-            class="group relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-white/5 border border-white/20 backdrop-blur-md shadow hover:shadow-lg transition-all duration-300 hover:scale-110 hover:border-white/30"
-            title="YouTube"
-          >
-            <div
-              class="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-            ></div>
-            <i
-              class="fa-brands fa-youtube text-white text-lg md:text-xl z-10 transition-transform duration-300 group-hover:scale-110"
+              aria-hidden="true"
             ></i>
           </a>
         </div>
-
         <div class="transparent_overlay"></div>
       </section>
-
-      <footer
-        class="text-center py-6 text-zinc-600 text-sm border-t border-zinc-800"
-      >
-        © <span id="year"></span> Kartikeya. All rights reserved.
-      </footer>
     </div>
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-
       Promise.race([
         document.fonts.ready,
         new Promise((resolve) => setTimeout(resolve, 5000)),
