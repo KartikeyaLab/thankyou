@@ -45,11 +45,33 @@
             </div>
 
             <ul class="nav-links">
-              <li><a href="#">Home</a></li>
+              <li>
+                <a href="https://kartikeyalab.github.io/kartikeya/">Home</a>
+              </li>
+              <li>
+                <a href="https://github.com/KartikeyaLab" target="_blank"
+                  >Github</a
+                >
+              </li>
             </ul>
           </div>
         </nav>
       </div>
+
+      <div id="mobileMenu" class="mobile-nav">
+        <div class="mobile-nav-header">
+          <button id="closeMobileMenu" class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="https://kartikeyalab.github.io/kartikeya/">Home</a></li>
+          <li>
+            <a href="https://github.com/KartikeyaLab" target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
+
       <section
         class="flex-grow flex flex-col justify-center items-center text-center px-6 header fade-element"
       >
@@ -65,7 +87,6 @@
         >
           <a
             href="https://kartikeyalab.github.io/kartikeya"
-            target="_blank"
             class="group relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-white/5 border border-white/20 backdrop-blur-md shadow hover:shadow-lg transition-all duration-300 hover:scale-110 hover:border-white/30"
             title="Website Builder"
           >
@@ -138,6 +159,25 @@
         setTimeout(() => {
           content.classList.add("show");
         }, 1000);
+      });
+
+      const openBtn = document.getElementById("openMobileMenu");
+      const closeBtn = document.getElementById("closeMobileMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const navLinks = mobileMenu.querySelectorAll("a");
+
+      openBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+        });
       });
     </script>
   </body>
